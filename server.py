@@ -1,8 +1,13 @@
 import socket
 import json
+import pandas as pd
 
 ip_server = '127.0.0.1'  # Endereco IP do servidor
 port_server = 12345      # Porta do servidor
+
+# def lerArquivo():
+#   df = pd.read_csv('./data.txt')
+#   print(df)
 
 def incluirPrateleira(id):
   print("Entrou na funcao 0")
@@ -14,7 +19,8 @@ def removerPrateleira(id):
   return True
 
 def alterarIdPrateleira(idAntigo, idNovo):
-  print("Entrou na funcao 2")
+  df = pd.read_csv('./data.txt')
+  print(df)
   return True
 
 def setValorSensor(id, valorSensor):
