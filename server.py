@@ -14,13 +14,14 @@ def incluirPrateleira(id):
   return True
 
 def removerPrateleira(id):
-  print('id is:', id);
-  print("Entrou na funcao 1")
+  df = pd.read_csv('./data.txt')
+  print('this is dataframe')
+  print(df)
+  
   return True
 
 def alterarIdPrateleira(idAntigo, idNovo):
-  df = pd.read_csv('./data.txt')
-  print(df)
+  print("Entrou na funcao 2")
   return True
 
 def setValorSensor(id, valorSensor):

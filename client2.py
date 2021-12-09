@@ -36,7 +36,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as socket_client:
     data_str = data.decode()
     print(data_str)
     
-with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as socket_client:
-    res = socket_client.recv(1024)
-    port_server = res.decode()
-    print('port server ->', port_server)
+# with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as socket_client:
+#     res = socket_client.recv(1024)
+#     port_server = res.decode()
+#     print('port server ->', port_server)
